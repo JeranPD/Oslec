@@ -1,0 +1,167 @@
+.footer {
+  /* margin-top: 19%; */
+  background-color: #212529;
+  color: rgb(243, 232, 232);
+  padding: 2em 5em;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+
+/* First column */
+.footer .footer-section {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-section .message-container .message-text {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.footer .footer-section .message-container .us-lowercase {
+  text-transform: lowercase;
+}
+.footer .footer-section .message-container .message-input {
+  background: transparent;
+  color: #ffffff;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  outline: none;
+  padding: 0 0.5em;
+}
+.footer .footer-section .message-container .message-btn {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: -1em;
+  font-size: 1.3rem;
+  transform: rotate(20deg);
+}
+.footer .footer-section .footer-logo-container {
+  display: flex;
+}
+.footer .footer-section .footer-logo-container .footer-logo {
+  max-width: 90px;
+}
+.footer .footer-section .footer-logo-container .logo-text {
+  font-size: 1.5rem;
+  margin-top: 1em;
+}
+
+.os-color {
+  color: #f29200;
+}
+
+/* Footer Link */
+.footer .oslec-links-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer .oslec-links-footer .link-footer{
+  color: #fff;
+}
+
+/* Footer Address */
+.footer .Address-container {
+  display: flex;
+  flex-direction: column;
+}
+.Address-title {
+  font-size: 1.5rem;
+}
+.footer .Address-container .phone-number {
+  font-size: 1rem;
+}
+.footer .Address-container .shop-status {
+  font-size: 1rem;
+}
+
+/* Footer Map */
+.footer .Map-container .map{
+  border: 0;
+  outline: none;
+  margin-bottom: 1em;
+}
+.footer .Map-container .map .address {
+  background: #212529;
+  cursor: pointer; 
+  width: 100px;
+}
+.footer .Map-container .social-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.footer .Map-container .social-link {
+  font-size: 2rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.footer .Map-container .social-link a{
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+.footer .Map-container .social-link a:hover{
+  color: var(--primary-100);
+}
+@media only screen and (max-width: 850px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .footer .Map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer .Address-container .Address-title,
+  .footer .Address-container .phone-number,
+  .footer .Address-container .shop-status {
+    margin: 0;
+  }
+  .footer .oslec-links-footer {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer .Map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer .Address-container .Address-title,
+  .footer .Address-container .phone-number,
+  .footer .Address-container .shop-status {
+    margin: 0;
+    text-align: center;
+  }
+  .footer .oslec-links-footer {
+    text-align: center;
+  }
+  .footer .footer-section .message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer .footer-section .message-container .message-btn {
+    margin-left: 8em;
+    margin-top: -1em;
+  }
+}

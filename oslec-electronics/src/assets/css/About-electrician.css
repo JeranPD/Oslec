@@ -1,0 +1,62 @@
+.homeabout-container {
+  margin-top: 3em;
+  width: 100%;
+  padding: 78px 0px;
+  
+}
+
+.homeabout-container .technicianprofile-home {
+  height: auto;
+  width: 420px;
+  border: 2px solid #050a30;
+  border-radius: 5px;
+}
+.homeabout-text {
+  width: 80%;
+}
+.homemain {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* line-height: 1em; */
+}
+.alignC{
+  margin: 0;
+  padding: 0;
+}
+.techStatement{
+  text-indent: 50px;
+  margin-top: 1em;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 1061px) {
+  .homeabout-text {
+    margin-left: 5em;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .homeabout-container .technicianprofile-home {
+    width: 300px;
+  }
+  .homemain {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .homeabout-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .homeabout-container .technicianprofile-home {
+    width: 200px;
+  }
+}

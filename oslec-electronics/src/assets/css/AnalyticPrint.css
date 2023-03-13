@@ -1,0 +1,38 @@
+@media all {
+  .page-break {
+    display: none;
+  }
+}
+
+@media print {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+  }
+
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+
+  .barstyles {
+    width: 100%;
+    margin: 0 auto;
+    text-indent: 50px;
+  }
+
+  .page-break {
+    margin-top: 1rem;
+    display: block;
+    page-break-before: auto;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 20mm;
+}
